@@ -1,11 +1,22 @@
 body {
     background-color: #f2f2f2;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: #6d6d6d;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 #navigation {
@@ -171,4 +182,53 @@ nav .menu{
     border-left: 1px solid #e1e1e1;
     padding: 15px 20px 15px 20px;  
     text-align: center;
+}
+
+.container{
+    width: 600px;
+    margin: 50px auto 0 auto;
+    border: 0.5px solid #bababa;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.timeline-figure{
+    height: 300px;
+    overflow: hidden;
+    border: 0.5px solid #bababa;
+}
+
+.timeline-img{
+    width: 100%;
+   
+}
+
+.timeline-text{
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    color: #4f4f4f;
+    max-width: 520px;
+}
+
+.meta-dados{
+    display: flex;
+}
+.comment-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.timeline-description{
+    font-family: 'Calibri', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #696969;
+    font-size: 16px;
 }
