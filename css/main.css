@@ -19,6 +19,11 @@ p {
     margin: 0;
 }
 
+h3{
+    padding: 0;
+    margin: 0;
+}
+
 #navigation {
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -231,4 +236,70 @@ nav .menu{
     margin-top: 20px;
     color: #696969;
     font-size: 16px;
+}
+
+.r1c1{grid-area: r1c1}
+.r1c2{grid-area: r1c2}
+.r1c3{grid-area: r1c3}
+
+.group-grid{
+    margin: auto;
+    margin-top: 80px;
+    width: 800px;
+    grid-template-rows: 15em 15em 15em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-template-areas: 
+    "r1c1 r1c2 r1c3"
+}
+
+.r1c1, .r1c2, .r1c3{
+    background-color: #ffff;
+    border: 0.5px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-add{
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border-radius: 100%;
+    margin: auto;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.button-add p{
+    font-size: 50px;
+    color: #696969;
+    font-family: 'Calibri', sans-serif;
+    margin-top: 8px;
+}
+
+.group-icon{
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.group-name{
+    font-family: 'Calibri', sans-serif;
+    margin-top: 10px;
+    color: #6d6d6d;
+}
+
+.group-adm{
+    font-family: 'Calibri', sans-serif;
+}
+
+.online-icon{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
 }
