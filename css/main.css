@@ -24,6 +24,11 @@ h3{
     margin: 0;
 }
 
+h1{
+    margin: 0;
+    padding: 0;
+}
+
 #navigation {
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -319,9 +324,90 @@ nav .menu{
 .group-button{
     font-family: 'Calibri', sans-serif;
     margin-top: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     background-color: #869CF5;
     padding: 1px 18px 1px 18px;
     color: #ffff;
+}
+
+.group-adm span{
+    color: #5d86d7;
+}
+
+nav .group-menu{
+    width: 100%;
+}
+
+.group-menu ul{
+    padding-left: 150px;
+    margin: 0;
+    background-color: white;
+    list-style: none;
+    border: 1px solid rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Calibri', sans-serif;
+    width: 100%;
+}
+
+.group-menu ul li {
+    font-weight: bold;
+    color: #6d6d6d;
+    cursor: pointer;
+    border-left: 1px solid #e1e1e1;
+    padding: 15px 20px 15px 20px;  
+    text-align: center;
+}
+
+.group-menu ul li:first-child{
+    border: none;
+}
+
+.header-group{
+    background-color: #9ab9f0;
+    background-image: url('../images/alternative_doodles.png');
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.group-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 130px;
+}
+
+.group{
+    margin-left: 10px;
+}
+
+.group svg{
+    margin: 0;
+    padding: 0;
+}
+
+.group-title{
+    color: #fff;
+    font-family: 'Calibri', sans-serif;
+    font-size: 35px;
+}
+
+.group-description{
+    color: #fff;
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+}
+
+.qtdpessoas{
+    line-height: 18px;
+    display: flex;
+}
+
+.qtdpessoas div{
+    color:#fff;
+    font-family: 'Calibri', sans-serif;
+    font-size: 15px;
+    margin-left: 2px;
 }
