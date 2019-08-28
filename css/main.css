@@ -189,7 +189,14 @@ nav .menu{
     text-align: center;
 }
 
+.timeline-grid{
+    display: grid;
+    flex-direction: column;
+    margin: auto;
+}
+
 .container{
+    grid-area: c1;
     width: 600px;
     margin: 50px auto 0 auto;
     border: 0.5px solid #bababa;
@@ -257,7 +264,7 @@ nav .menu{
 .r1c1, .r1c2, .r1c3{
     background-color: #ffff;
     border: 0.5px solid rgba(0,0,0,0.15);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -282,24 +289,39 @@ nav .menu{
 }
 
 .group-icon{
-    border-radius: 5px;
-    height: 40px;
-    width: 40px;
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
+    border: 0.5px solid #bababa;
 }
 
 .group-name{
     font-family: 'Calibri', sans-serif;
-    margin-top: 10px;
-    color: #6d6d6d;
+    color: rgb(132, 132, 132);
+    font-size: 20px;
+    font-weight: 32px;
 }
 
 .group-adm{
     font-family: 'Calibri', sans-serif;
+    color: gray;
+    font-size: 18px;
 }
 
-.online-icon{
-    width: 10px;
-    height: 10px;
-    background-color: gray;
+.group-adm::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #6d6d6d;
     border-radius: 50%;
+}
+
+.group-button{
+    font-family: 'Calibri', sans-serif;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #869CF5;
+    padding: 1px 18px 1px 18px;
+    color: #ffff;
 }
