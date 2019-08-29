@@ -74,7 +74,7 @@ h1{
 
 
 .inner-navigation > ul > #logo, .right-session  {
-    width: 200px;
+    width: 220px;
 }
 
 .inner-navigation > ul #search .search-dudes .input-search {
@@ -314,6 +314,8 @@ nav .menu{
     font-family: 'Calibri', sans-serif;
     color: gray;
     font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
 .group-button{
@@ -328,6 +330,8 @@ nav .menu{
 
 .group-adm span{
     color: #5d86d7;
+    font-size: 28px;
+    padding-right: 2px;
 }
 
 nav .group-menu{
@@ -426,10 +430,53 @@ nav .group-menu{
 
 .a1b1, .a2b1, .a3b1{
     background-color: #ffff;
-    border: 0.5px solid #bababa;
+    border: 1px solid #bababa;
     border-radius: 7px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+}
+
+.pagegroup-imguser{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    border: 0.5px solid #bababa;
+    float: left;
+}
+
+.name-status{
+    float: left;
+    font-family: 'Calibri', sans-serif;
+    color: #bababa;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: #4f4f4f;
+    font-size: 14px;
+}
+
+.a1b1 > div, .a2b1 > div, .a3b1 > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagegroup-button
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6293eb;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    width: 80px;
+}
+
+.gerenciar{
+    line-height: 20px;
+    display: flex;
 }
