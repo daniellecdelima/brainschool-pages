@@ -41,7 +41,7 @@ h1{
 
 .inner-navigation {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto 0 auto;
 }
 
@@ -66,6 +66,7 @@ h1{
 .inner-navigation > ul > #logo {
     font-size: 25px;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .inner-navigation > ul > #logo img {
@@ -162,7 +163,6 @@ h1{
 }
 
 .user-tagsub{
-    margin-top: -5px;
     font-size: 18px;
     color: #f7f7f7;
     font-family: 'Calibri', sans-serif;
@@ -229,18 +229,19 @@ nav .menu{
     padding-top: 20px;
     font-family: 'Calibri', sans-serif;
     font-size: 20px;
-    color: #4f4f4f;
+    font-weight: bold;
+    color: rgb(132, 132, 132);
     max-width: 520px;
 }
 
 .meta-dados{
     display: flex;
+    align-items: center;
 }
 .comment-img{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border-radius: 5px;
-    border: 1px solid #bababa;
     margin-left: 40px;
     margin-top: 20px;
 }
@@ -249,7 +250,7 @@ nav .menu{
     font-family: 'Calibri', sans-serif;
     margin-left: 20px;
     margin-top: 20px;
-    color: #696969;
+    color: rgb(139, 139, 139);
     font-size: 16px;
 }
 
@@ -285,8 +286,9 @@ nav .menu{
     background-color: gray;
     border-radius: 100%;
     margin: auto;
-    background-color: #f2f2f2;
+    background-color: rgb(232, 232, 232);
     text-align: center;
+    cursor: pointer;
 }
 
 .button-add p{
@@ -297,9 +299,9 @@ nav .menu{
 }
 
 .group-icon{
-    border-radius: 8px;
-    height: 60px;
-    width: 60px;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
     border: 0.5px solid #bababa;
 }
 
@@ -312,25 +314,27 @@ nav .menu{
 
 .group-adm{
     font-family: 'Calibri', sans-serif;
-    color: gray;
-    font-size: 18px;
+    color: rgb(166, 166, 166);
+    font-size: 17px;
     display: flex;
     align-items: center;
+    margin-top: -5px;
 }
 
 .group-button{
     font-family: 'Calibri', sans-serif;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: none;
     background-color: #869CF5;
     padding: 1px 18px 1px 18px;
     color: #ffff;
+    cursor: pointer;
 }
 
 .group-adm span{
-    color: #5d86d7;
-    font-size: 28px;
+    color: rgb(158,195, 215);
+    font-size: 25px;
     padding-right: 2px;
 }
 
@@ -339,7 +343,7 @@ nav .group-menu{
 }
 
 .group-menu ul{
-    padding-left: 150px;
+    padding-left: 232px;
     margin: 0;
     background-color: white;
     list-style: none;
@@ -375,7 +379,7 @@ nav .group-menu{
     width: 100px;
     height: 100px;
     border-radius: 5px;
-    margin-left: 130px;
+    margin-left: 212px;
 }
 
 .group{
@@ -407,17 +411,18 @@ nav .group-menu{
 .qtdpessoas div{
     color:#fff;
     font-family: 'Calibri', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 2px;
+    font-weight: bold;
 }
 
 .pagegroup-grid{
     margin: auto;
     margin-top: 80px;
-    width: 800px;
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px;
+    grid-gap: 25px;
     grid-template-areas: 
     "a1b1"
     "a2b1"
@@ -435,25 +440,42 @@ nav .group-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    height: 55px;
 }
 
 .pagegroup-imguser{
-    width: 50px;
-    height: 50px;
-    border-radius: 7px;
-    border: 0.5px solid #bababa;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
     float: left;
+    margin-left: 5px;
 }
 
 .name-status{
     float: left;
     font-family: 'Calibri', sans-serif;
-    color: #bababa;
+    color: rgb(139, 139, 130);
     margin-left: 15px;
     margin-top: 5px;
     color: #4f4f4f;
-    font-size: 14px;
+    font-size: 17px;
+}
+
+.ns-status{
+    margin-top: -7px;
+    display: flex;
+    align-items: center;
+}
+.ns-status > span{
+    color: rgb(35, 141, 158);
+    font-size: 22px;
+}
+
+#moderador{
+    color: rgb(171,226, 89);
 }
 
 .a1b1 > div, .a2b1 > div, .a3b1 > div {
@@ -470,10 +492,11 @@ nav .group-menu{
     border-radius: 5px;
     background-color: #6293eb;
     color: #fff;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
     width: 80px;
+    cursor: pointer;
 }
 
 .gerenciar{

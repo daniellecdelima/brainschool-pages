@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="css/icons.css">
+	    <link href="scripts/main.js">
+	    <title>Groups</title>
+	</head>
+	<body>
+		<style type="text/css">
+
+			body{
+				background-color: #bababa;
+			}
+
+			.b1c1{grid-area: r1c1}
+			.b1c2{grid-area: r1c2}
+
+			.b2c2{grid-area: r2c2}
+			.b2c3{grid-area: r2c3}
+			
+			.b3c3{grid-area: r3c3}
+
+			.creategroup-modal{
+				margin: 50px auto 0 auto;
+				width: 600px;
+				height: 500px;
+				background-color: #ffff;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.b1c1, .b1c2, .b2c2, .b2c3, .b3c3{
+				/*background-color: pink;*/
+			}
+
+			.creategroup-modal-grid{
+				margin-left: 120px;
+				padding-top: 30px;
+				display: grid;
+				grid-gap: 30px;
+				width: 100%;
+				height: 100%;
+				grid-template-columns: repeat(3, 150px);
+				grid-template-rows: 75px 75px 50px;
+				grid-template-areas: 
+				"r1c1 r1c2 r1c2"
+				"r1c1 r2c2 r2c3"
+				"r3c3 r3c3 r3c3"
+			}
+
+			.modal-title{
+				margin-top: 30px;
+				color: gray;
+				font-family: 'Calibri', sans-serif;
+				font-size: 30px;
+				font-weight: bolder;
+			}
+
+			.modal-description{
+				margin-top: 10px;
+				font-size: 16px;
+				color: gray;
+				font-family: 'Calibri', sans-serif;
+				width: 250px;
+				text-align: center;
+				font-weight: lighter;
+			}
+
+			.creategroup-icon{
+				margin-top: 15px;
+				width: 150px;
+				height: 150px;
+				border-radius: 8px;
+				/*margin-left: 40px;*/
+			}
+
+			.creategroup-modal-grid figcaption{
+				font-family: 'Calibri', sans-serif;
+				font-size: 12px;
+				color: gray;
+				/*margin-left: 40px;*/
+				max-width: 150px;
+				margin-top: 4px;
+			}
+
+			.modal-label{
+				font-family: 'Calibri', sans-serif;
+				font-size: 18px;
+				font-weight: lighter;
+				color: gray;
+			}
+
+			.b1c2{
+				padding-top: 16px;
+				display: flex;
+				flex-direction: column;	
+			}
+
+			.modal-input{
+				border-radius: 6px;
+				border: 1px solid #d3d3d3;
+				color: #d3d3d3;
+				font-size: 12px;
+				padding: 10px;
+				font-family: 'Calibri', sans-serif;
+				margin-top: 5px;
+				margin-left: -5px;
+			}
+
+		</style>
+		<div class="creategroup-modal">
+			<h1 class="modal-title">crie seu grupo</h1>
+			<p class="modal-description">Escolha as informações para serem inseridas nos campos abaixo</p>
+
+			<div class="creategroup-modal-grid">
+				<section class="b1c1">
+					<img src="images/creategroup.webp" class="creategroup-icon">
+					<figcaption>Escolha uma imagem</figcaption>
+				</section>
+
+				<section class="b1c2">
+					<label class="modal-label">Nome do grupo</label>
+					<input type="text" name="" value="Escreva aqui um nome bem maneiro." class="modal-input">
+				</section>
+
+				<!--section class="b2c2"></section>
+				<section class="b2c3"></section>
+
+				<section class="b3c3"></section-->
+			</div-->
+		</div>
+	</body>
+</html>
