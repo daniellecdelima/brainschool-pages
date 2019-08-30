@@ -74,7 +74,7 @@ h1{
 
 
 .inner-navigation > ul > #logo, .right-session  {
-    width: 200px;
+    width: 220px;
 }
 
 .inner-navigation > ul #search .search-dudes .input-search {
@@ -162,7 +162,7 @@ h1{
 }
 
 .user-tagsub{
-    margin-top: -20px;
+    margin-top: -5px;
     font-size: 18px;
     color: #f7f7f7;
     font-family: 'Calibri', sans-serif;
@@ -194,6 +194,9 @@ nav .menu{
     text-align: center;
 }
 
+.menu ul li:first-child{
+    border: none;
+}
 .timeline-grid{
     display: grid;
     flex-direction: column;
@@ -311,14 +314,8 @@ nav .menu{
     font-family: 'Calibri', sans-serif;
     color: gray;
     font-size: 18px;
-}
-
-.group-adm::before{
-    content: "";
-    width: 7px;
-    height: 7px;
-    background-color: #6d6d6d;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .group-button{
@@ -333,6 +330,8 @@ nav .menu{
 
 .group-adm span{
     color: #5d86d7;
+    font-size: 28px;
+    padding-right: 2px;
 }
 
 nav .group-menu{
@@ -410,4 +409,74 @@ nav .group-menu{
     font-family: 'Calibri', sans-serif;
     font-size: 15px;
     margin-left: 2px;
+}
+
+.pagegroup-grid{
+    margin: auto;
+    margin-top: 80px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    grid-template-areas: 
+    "a1b1"
+    "a2b1"
+    "a3b1"
+}
+
+.a1b1{grid-area: a1b1}
+.a2b1{grid-area: a2b1}
+.a3b1{grid-area: a3b1}
+
+.a1b1, .a2b1, .a3b1{
+    background-color: #ffff;
+    border: 1px solid #bababa;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.pagegroup-imguser{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    border: 0.5px solid #bababa;
+    float: left;
+}
+
+.name-status{
+    float: left;
+    font-family: 'Calibri', sans-serif;
+    color: #bababa;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: #4f4f4f;
+    font-size: 14px;
+}
+
+.a1b1 > div, .a2b1 > div, .a3b1 > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagegroup-button
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6293eb;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    width: 80px;
+}
+
+.gerenciar{
+    line-height: 20px;
+    display: flex;
 }
