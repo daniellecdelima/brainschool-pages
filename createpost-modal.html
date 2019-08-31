@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <title>Groups</title>
+    </head>
+    <body>
+        <style type="text/css">
+            body{
+				background-color: #bababa;
+			}
+
+			.c1c1{grid-area: r1c1}
+			.c1c2{grid-area: r1c2}
+
+			.c2c2{grid-area: r2c2}
+			.c2c3{grid-area: r2c3}
+			
+            .c3c3{grid-area: r3c3}
+            
+            .createpost-modal{
+				margin: 50px auto 0 auto;
+				width: 600px;
+				height: 430px;
+				background-color: #ffff;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+                justify-content: center;
+            }
+            
+            .createpost-modal-grid{
+				margin-left: 150px;
+				padding-top: 30px;
+				display: grid;
+				grid-gap: 30px;
+				width: 100%;
+				height: 100%;
+				grid-template-columns: repeat(3, 150px);
+				grid-template-rows: 75px 75px 50px;
+				grid-template-areas: 
+				"r1c1 r1c2 r1c2"
+				"r1c1 r2c2 r2c2"
+                "r3c3 r3c3 r3c3"
+            }  
+            
+            .createpost-icon{
+                margin-top: 15px;
+                width: 150px;
+                height: 150px;
+                border-radius: 8px;
+            }
+
+            .modal-title{
+				margin-top: 30px;
+				color: gray;
+				font-family: 'Calibri', sans-serif;
+				font-size: 30px;
+				font-weight: bolder;
+			}
+
+			.modal-description{
+				margin-top: 10px;
+				font-size: 16px;
+				color: gray;
+				font-family: 'Calibri', sans-serif;
+				width: 250px;
+				text-align: center;
+				font-weight: lighter;
+            }
+
+            .createpost-modal > .modal-description{
+                width: 330px;
+            }
+            
+            .modal-label{
+				font-family: 'Calibri', sans-serif;
+				font-size: 18px;
+				font-weight: lighter;
+				color: gray;
+            }
+            
+            .modal-input{
+				border-radius: 6px;
+				border: 1px solid #d3d3d3;
+				color: #d3d3d3;
+				font-size: 12px;
+				padding: 10px;
+				font-family: 'Calibri', sans-serif;
+				margin-top: 5px;
+				margin-left: -5px;
+            }
+            
+            .c1c2 {
+                padding-top: 16px;
+				display: flex;
+				flex-direction: column;	
+            }
+
+            .c2c2{
+                display: flex;
+				flex-direction: column;	
+            }
+
+            .modal-button{
+				margin-left: 175px;
+				padding: 3px 20px 3px 20px;
+				background-color:rgb(134, 156, 245);
+				color: #fff;
+				font-size: 12px;
+				font-family: 'Calibri', sans-serif;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+            }
+            
+            .c3c3{
+                margin-top: -25px;
+            }
+
+            .qtd-anexos{
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+                border-radius: 50%;
+                background-color: rgb(179, 242, 106);
+                color: #fff;
+                font-family: 'Calibri', sans-serif;
+                margin-top: -170px;
+                margin-left: 130px;
+            }
+
+            .createpost-modal-grid figcaption{
+				font-family: 'Calibri', sans-serif;
+				font-size: 12px;
+				color: gray;
+				/*margin-left: 40px;*/
+				max-width: 150px;
+				margin-top: 4px;
+			}
+
+            .close-fora{
+				position: absolute;
+				margin-left: 930px;
+				margin-top: 15px;
+				cursor: pointer;
+			}
+
+        </style>
+        <div class="close-fora">
+            <img src="https://img.icons8.com/material-rounded/26/000000/delete-sign.png">
+        </div>
+        <div class="createpost-modal">
+            <h1 class="modal-title">escreva seu post</h1>
+            <p class="modal-description">Anexe os materias que deseja e escreva um post bem maneiro para compartilhar com o pessoal. </p>
+            <div class="createpost-modal-grid">
+                <section class="c1c1">
+                    <img src="images/post.jpg" alt="" class="creategroup-icon">
+                    <div class="qtd-anexos">+3</div>
+                    <figcaption>Insira aqui seus anexos</figcaption>
+                </section>
+                <section class="c1c2">
+                    <label class="modal-label">Título da postagem</label>
+                    <input type="text" class="modal-input" value="Escreva aqui um nome bem maneiro.">
+                </section>
+                <section class="c2c2">
+                    <label class="modal-label">Descrição</label>
+                    <input type="text" class="modal-input" value="Escreva o que você está pensando ...">
+                </section>
+                <section class="c3c3">
+                    <input type="button" class="modal-button" value="Enviar">
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

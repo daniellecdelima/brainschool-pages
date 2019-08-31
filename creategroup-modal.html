@@ -28,7 +28,7 @@
 			.creategroup-modal{
 				margin: 50px auto 0 auto;
 				width: 600px;
-				height: 500px;
+				height: 430px;
 				background-color: #ffff;
 				border-radius: 5px;
 				display: flex;
@@ -115,7 +115,59 @@
 				margin-left: -5px;
 			}
 
+			.modal-select{
+				-webkit-appearance:none;
+				padding-left: 10px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-right: 20px;
+				border-radius: 6px;
+				border: 1px solid #d3d3d3;
+				font-family: 'Calibri', sans-serif;
+				font-size: 12px;
+				color: #d3d3d3;
+				margin-top: 5px;
+				margin-left: -5px;
+				width: 130px;	
+				background: url("images/seta.png") 95% 50% no-repeat;
+			}
+
+			.b2c3 > .modal-select{
+				margin-left: -35px;
+				width: 183px;
+			}
+
+			.b2c3 > .modal-label{
+				margin-left: -35px;
+			}
+
+			.b3c3{
+				margin-top: -25px;
+			}
+
+			.modal-button{
+				margin-left: 175px;
+				padding: 3px 20px 3px 20px;
+				background-color:rgb(134, 156, 245);
+				color: #fff;
+				font-size: 12px;
+				font-family: 'Calibri', sans-serif;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.close-fora{
+				position: absolute;
+				margin-left: 930px;
+				margin-top: 15px;
+				cursor: pointer;
+			}
+
 		</style>
+		<div class="close-fora">
+			<img src="https://img.icons8.com/material-rounded/26/000000/delete-sign.png">
+		</div>
 		<div class="creategroup-modal">
 			<h1 class="modal-title">crie seu grupo</h1>
 			<p class="modal-description">Escolha as informações para serem inseridas nos campos abaixo</p>
@@ -131,10 +183,40 @@
 					<input type="text" name="" value="Escreva aqui um nome bem maneiro." class="modal-input">
 				</section>
 
-				<!--section class="b2c2"></section>
-				<section class="b2c3"></section>
+				<section class="b2c2">
+					<label class="modal-label">Matéria</label>
+					<select name="" id="" class="modal-select">
+						<option value="mat" selected>Matemática</option>
+						<option value="mat">Química</option>
+						<option value="mat">Física</option>
+						<option value="mat">Biologia</option>
+					</select>
+				</section>
+				<section class="b2c3">
+					<label class="modal-label">Região</label>
+					<select name="" id="" class="modal-select">
+						<option value="bra" selected>
+							<!--img src="images/br.png" alt="" class="img-select-option"-->
+							Brasil
+						</option>
+						<option value="ale">
+							<!--img src="images/ale.png" alt="" class="img-select-option"-->
+							Alemanha
+						</option>
+						<option value="sui">
+							<!--img src="images/sui.jpg" alt="" class="img-select-option"-->
+							Suíça
+						</option>
+						<option value="nor">
+							<!--img src="images/nor.png" alt="" class="img-select-option"-->
+							Noruega
+						</option>
+					</select>
+				</section>
 
-				<section class="b3c3"></section-->
+				<section class="b3c3">
+					<input type="button" value="Finalizar" class="modal-button">
+				</section>
 			</div-->
 		</div>
 	</body>
