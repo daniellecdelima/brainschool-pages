@@ -211,7 +211,7 @@ nav .menu{
 .container{
     grid-area: c1;
     width: 600px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 60px auto;
     border: 0.5px solid #bababa;
     border-radius: 5px;
     background-color: #fff;
@@ -294,13 +294,16 @@ nav .menu{
     background-color: rgb(232, 232, 232);
     text-align: center;
     cursor: pointer;
+    border: none;
+    display: flex;
 }
 
 .button-add p{
     font-size: 50px;
     color: #696969;
     font-family: 'Calibri', sans-serif;
-    margin-top: 8px;
+    margin-left: 27px;
+    margin-top: 7px;
 }
 
 .group-icon{
@@ -350,16 +353,12 @@ nav .menu{
 }
 
 .group-menu ul{
-    padding-left: 40px; 
-    margin: 0;  
     list-style: none;
     display: flex;
     justify-content: flex-start;
     font-family: 'Calibri', sans-serif;
-    width: 90%;
-    max-width: 1000px;
-    border-right: 1px solid rgba(0,0,0,0.15);
 }
+
 
 .group-menu ul li {
     font-weight: bold;
@@ -370,9 +369,12 @@ nav .menu{
     text-align: center;
 }
 
+
 .group-menu ul li:first-child{
     border: none;
+    margin-left: -16px;
 }
+
 
 .header-group{
     background-color: #9ab9f0;
@@ -433,6 +435,7 @@ nav .menu{
 .pagegroup-grid{
     margin: auto;
     margin-top: 80px;
+    padding-bottom: 50px;
     width: 65%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -504,7 +507,7 @@ nav .menu{
     height: 30px;
     border: none;
     border-radius: 5px;
-    background-color: #6293eb;
+    background-color: rgb(134, 156, 245);
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -518,8 +521,18 @@ nav .menu{
     display: flex;
 }
 
-.modal1{
-    display: none;
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
 
 .b1c1{grid-area: r1c1}
@@ -531,15 +544,19 @@ nav .menu{
 .b3c3{grid-area: r3c3}
 
 .creategroup-modal{
-    margin: 50px auto 0 auto;
+    /* margin: 50px auto 0 auto; */
+    margin: auto;
     width: 600px;
-    height: 430px;
-    background-color: #ffff;
+    height: 450px;
+    /*background-color: #ffff;*/
+    z-index: 2;
     border-radius: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-image: radial-gradient(circle at 590px 15px, rgba(255, 0, 0, 0) 0, rgba(0, 0, 0, 0) 35px, white 14px);
+	background-repeat: no-repeat;
 }
 
 .b1c1, .b1c2, .b2c2, .b2c3, .b3c3{
@@ -562,7 +579,7 @@ nav .menu{
 }
 
 .modal-title{
-    margin-top: 30px;
+    margin-top: 45px;
     color: gray;
     font-family: 'Calibri', sans-serif;
     font-size: 30px;
@@ -621,7 +638,7 @@ nav .menu{
 }
 
 .modal-select{
-    -webkit-appearance:none;
+    /*-webkit-appearance:none;*/
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -634,7 +651,7 @@ nav .menu{
     margin-top: 5px;
     margin-left: -5px;
     width: 130px;	
-    background: url("images/seta.png") 95% 50% no-repeat;
+    background: url("/images/seta.png") 95% 50% no-repeat;
 }
 
 .b2c3 > .modal-select{
@@ -652,7 +669,7 @@ nav .menu{
 
 .modal-button{
     margin-left: 175px;
-    padding: 3px 16px 3px 16px;
+    padding: 3px 20px 3px 20px;
     background-color:rgb(134, 156, 245);
     color: #fff;
     font-size: 12px;
@@ -662,9 +679,33 @@ nav .menu{
     cursor: pointer;
 }
 
-.close-fora{
+
+.close{
     position: absolute;
-    margin-left: 930px;
-    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 50%;
     cursor: pointer;
+    margin-left: 590px;
+    margin-top: -210px;
+    z-index: 3;
+    height: 50px;
+    width: 50px;
+}
+
+.close svg{
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.contencao-modal{
+    width: 650px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.img-select{
+    width: 100px;
+    height: 100px;
 }

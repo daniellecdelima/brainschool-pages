@@ -6,10 +6,12 @@
 	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/main.css">
-	    <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <script src="./scripts/main.js"></script>
 	    <title>Groups</title>
 	</head>
 	<body>
+        <!--button id="mybtn" onclick="function1()">teste</button-->
 		<!--Navbar-->
         <nav id="navigation">
             <div class="inner-navigation">
@@ -56,9 +58,9 @@
         <main class="group-grid">
         	<!-- Grid dos grupos-->
         	<section class="r1c1">
-        		<div class="button-add">
+        		<div class="button-add" id="button-creategroup">
         			<p>+</p>
-        		</div>
+                </div>
         	</section>
 			<section class="r1c2">
 				<figure>
@@ -84,5 +86,71 @@
 
         <!-- Modais -->
         <!-- Criar grupos -->
+        <div class="modal" id="modal-creategroup">
+            <div class="contencao-modal">
+                <div class="close" id="close-creategroup">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                        width="18" height="18"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M40.13333,22.93333c-1.46702,0 -2.93565,0.55882 -4.05365,1.67969l-11.46667,11.46667c-2.24173,2.24173 -2.24173,5.87129 0,8.10729l41.81302,41.81302l-41.81302,41.81302c-2.24173,2.24173 -2.24173,5.87129 0,8.10729l11.46667,11.46667c2.24173,2.24173 5.87129,2.24173 8.10729,0l41.81302,-41.81302l41.81302,41.81302c2.236,2.24173 5.87129,2.24173 8.10729,0l11.46667,-11.46667c2.24173,-2.24173 2.24173,-5.87129 0,-8.10729l-41.81302,-41.81302l41.81302,-41.81302c2.24173,-2.236 2.24173,-5.87129 0,-8.10729l-11.46667,-11.46667c-2.24173,-2.24173 -5.87129,-2.24173 -8.10729,0l-41.81302,41.81302l-41.81302,-41.81302c-1.12087,-1.12087 -2.58663,-1.67969 -4.05365,-1.67969z"></path></g></g></svg>
+                </div>
+                <div class="creategroup-modal">
+                    <h1 class="modal-title">crie seu grupo</h1>
+                    <p class="modal-description">Escolha as informações para serem inseridas nos campos abaixo</p>
+        
+                    <div class="creategroup-modal-grid">
+                        <section class="b1c1">
+                            <img src="images/creategroup.webp" class="creategroup-icon">
+                            <figcaption>Escolha uma imagem</figcaption>
+                        </section>
+        
+                        <section class="b1c2">
+                            <label class="modal-label">Nome do grupo</label>
+                            <input type="text" name="" value="Escreva aqui um nome bem maneiro." class="modal-input">
+                        </section>
+        
+                        <section class="b2c2">
+                            <label class="modal-label">Matéria</label>
+                            <select name="" id="" class="modal-select">
+                                <option value="mat" selected>Matemática</option>
+                                <option value="mat">Química</option>
+                                <option value="mat">Física</option>
+                                <option value="mat">Biologia</option>
+                            </select>
+                        </section>
+                        <section class="b2c3">
+                            <label class="modal-label">Região</label>
+                            <select name="" id="" class="modal-select">
+                                <option value="bra" selected>
+                                    <div class="image-select">
+                                        <img src="./images/br.png" alt="" class="select-img">
+                                    </div>
+                                    <!--img src="images/br.png" alt="" class="img-select-option"-->
+                                    Brasil
+                                </option>
+                                <option value="ale">
+                                    <!--img src="images/ale.png" alt="" class="img-select-option"-->
+                                    Alemanha
+                                </option>
+                                <option value="sui">
+                                    <!--img src="images/sui.jpg" alt="" class="img-select-option"-->
+                                    Suíça
+                                </option>
+                                <option value="nor">
+                                    <!--img src="images/nor.png" alt="" class="img-select-option"-->
+                                    Noruega
+                                </option>
+                            </select>
+                        </section>
+        
+                        <section class="b3c3">
+                            <input type="button" value="Finalizar" class="modal-button">
+                        </section>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+        <!-- -->
 	</body>
 </html>
