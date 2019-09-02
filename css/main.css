@@ -386,6 +386,7 @@ nav .menu{
 }
 
 .contencao{
+   /* position: absolute; */
     width: 90%;
     max-width: 1000px;
     margin: 0 auto 0 auto;
@@ -437,7 +438,7 @@ nav .menu{
     margin: auto;
     margin-top: 80px;
     padding-bottom: 50px;
-    width: 65%;
+    width: 52%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
@@ -545,7 +546,8 @@ nav .menu{
 .b3c3{grid-area: r3c3}
 
 .creategroup-modal{
-    /* margin: 50px auto 0 auto; */
+    /*margin: 50px auto 0 auto;*/
+    position: relative;
     margin: auto;
     width: 600px;
     height: 450px;
@@ -565,7 +567,7 @@ nav .menu{
 }
 
 .creategroup-modal-grid{
-    margin-left: 120px;
+    margin-left: 95px;
     padding-top: 30px;
     display: grid;
     grid-gap: 30px;
@@ -670,7 +672,7 @@ nav .menu{
 
 .modal-button{
     margin-left: 175px;
-    padding: 3px 20px 3px 20px;
+    padding: 10px 25px 10px 25px;
     background-color:rgb(134, 156, 245);
     color: #fff;
     font-size: 12px;
@@ -686,8 +688,20 @@ nav .menu{
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 590px;
-    margin-top: -210px;
+    top: 11px;
+    right: 6px;
+    z-index: 3;
+    height: 50px;
+    width: 50px;
+}
+
+#button-postmaterial{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 60px;
+    right: 6px;
     z-index: 3;
     height: 50px;
     width: 50px;
@@ -699,6 +713,10 @@ nav .menu{
 }
 
 .contencao-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 650px;
     height: 500px;
     display: flex;
@@ -826,9 +844,10 @@ nav .menu{
 
 .createpost-modal{
     /* margin: 50px auto 0 auto; */
+    position: relative;
     margin: auto;
     width: 600px;
-    height: 450px;
+    height: 350px;
     /*background-color: #ffff;*/
     z-index: 2;
     border-radius: 5px;
@@ -841,7 +860,7 @@ nav .menu{
 }
 
 .createpost-modal-grid{
-    margin-left: 150px;
+    margin-left: 95px;
     padding-top: 30px;
     display: grid;
     grid-gap: 30px;
@@ -877,7 +896,7 @@ nav .menu{
     flex-direction: column;	
 }
 
-.modal-button{
+/*.modal-button{
     margin-left: 175px;
     padding: 3px 20px 3px 20px;
     background-color:rgb(134, 156, 245);
@@ -887,7 +906,7 @@ nav .menu{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+}*/
 
 .c3c3{
     margin-top: -25px;
