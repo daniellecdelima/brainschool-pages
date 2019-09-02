@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown ul {
+            list-style-type: none;
+            font-family: 'Calibri', sans-serif;
+        }
+
+        .dropdown{
+            padding: 20px;
+            border: 1px solid #bababa;
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .level1, .level2 {
+            font-weight: bolder;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .level-before1{
+            background-color: rgb(91, 102, 255);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .level-before1 svg{
+            margin-left: 6px;
+            margin-top: 6px;
+        }
+
+        .level1 span{
+            margin-left: 7px;
+        }
+
+        .level-before2{
+            background-color: rgb(59, 216, 106);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        } 
+        
+        .level-before2 svg{
+            margin-left: 6px;
+            margin-top: 6px;
+        }
+
+        .level2 span{
+            margin-left: 7px;
+        }
+
+        .sublevel1, .sublevel2 {
+            margin-left: 30px;
+            margin-top: -25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sublevel1::before{
+            content: "•";
+            font-size: 40px; 
+            color: rgb(91, 102, 255);
+        }
+
+        .sublevel2::before{
+            content: "•";
+            font-size: 40px; 
+            color: rgb(59, 216, 106);
+        }
+
+        #si1, #si2{
+            margin-top: -8px;
+        }
+
+        #sh{
+            margin-top: 8px;
+        }
+
+    </style>
+    <div class="dropdown">
+        <ul>
+            <li>
+                <div class="level1">
+                    <div class="level-before1">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="12" height="12"
+                            viewBox="0 0 172 172"
+                            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M131.96744,14.33333c-1.83376,0 -3.66956,0.69853 -5.06706,2.09961l-12.23372,12.23372l28.66667,28.66667l12.23372,-12.23372c2.80217,-2.80217 2.80217,-7.33911 0,-10.13412l-18.53255,-18.53255c-1.40108,-1.40108 -3.23329,-2.09961 -5.06706,-2.09961zM103.91667,39.41667l-68.08333,68.08333c0,0 7.2025,0.03583 10.75,3.58333c3.5475,3.5475 3.47135,10.63802 3.47135,10.63802c0,0 7.30731,0.14065 10.86198,3.69531c3.55467,3.55467 3.58333,10.75 3.58333,10.75l68.08333,-68.08333zM26.30111,121.83333l-4.80111,28.66667l28.66667,-4.80111z"></path></g></g></svg>
+                    </div>
+                    <span>Conteúdo</span>
+                </div>
+                <ul>
+                    <li class="sublevel1" id="si1">nova publicação</li>
+                    <li class="sublevel1">inserir material na biblioteca</li>
+                    <li class="sublevel1">criar enquete</li>
+                </ul>
+            </li>
+            <li>
+                <div class="level2" id="sh">
+                     <div class="level-before2">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="12" height="12"
+                            viewBox="0 0 172 172"
+                            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M131.96744,14.33333c-1.83376,0 -3.66956,0.69853 -5.06706,2.09961l-12.23372,12.23372l28.66667,28.66667l12.23372,-12.23372c2.80217,-2.80217 2.80217,-7.33911 0,-10.13412l-18.53255,-18.53255c-1.40108,-1.40108 -3.23329,-2.09961 -5.06706,-2.09961zM103.91667,39.41667l-68.08333,68.08333c0,0 7.2025,0.03583 10.75,3.58333c3.5475,3.5475 3.47135,10.63802 3.47135,10.63802c0,0 7.30731,0.14065 10.86198,3.69531c3.55467,3.55467 3.58333,10.75 3.58333,10.75l68.08333,-68.08333zM26.30111,121.83333l-4.80111,28.66667l28.66667,-4.80111z"></path></g></g></svg>
+                    </div>
+                    <span>Gerenciar</span>
+                </div>
+                <ul>
+                    <li class="sublevel2" id="si2">editar perfil</li>
+                    <li class="sublevel2">remover grupo</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

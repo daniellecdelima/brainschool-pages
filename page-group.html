@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/icons.css">
+        <script src="./scripts/postmaterial.js"></script>
         <title>Groups</title>
     </head>
     <body>
@@ -55,11 +56,13 @@
         </header>
         <nav class="group-menu">
             <div class="contencao">
-                <ul>
-                    <li><a href="profile.html">Início</a></li>
-                    <li>Alunos</li>
-                    <li>Biblioteca</li>
-                    <li class="gerenciar">
+                <ul class="group-menu-ul">
+                    <li class="group-menu-li"><a href="profile.html">Início</a></li>
+                    <li class="group-menu-li">Alunos</li>
+                    <li class="group-menu-li">Biblioteca</li>
+                    <li class="group-menu-li" id="li-dropdown">
+                        <div class="dropdown-spc">
+                            <div class="gerenciar">
                                 Gerenciar &nbsp;
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 width="20" height="20"
@@ -71,6 +74,45 @@
                                 font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                 <path d="M0,172v-172h172v172z" fill="none"></path>
                                 <g fill="#666666"><path d="M17.2,68.8v-11.46667c0,-2.21307 1.27853,-4.2312 3.27947,-5.18293c2.00093,-0.95173 4.3688,-0.65933 6.0888,0.74533l59.43173,48.63013l59.43747,-48.63013c1.71427,-1.40467 4.08213,-1.69133 6.0888,-0.74533c2.00667,0.946 3.27373,2.96987 3.27373,5.18293v11.46667c0,1.72 -0.774,3.34827 -2.10413,4.4376l-63.06667,51.6c-2.1156,1.72573 -5.14853,1.72573 -7.26413,0l-63.06667,-51.6c-1.3244,-1.08933 -2.0984,-2.7176 -2.0984,-4.4376z"></path></g></g></svg>          
+                            </div>
+                            <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <div class="level1">
+                                                <div class="level-before1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                        width="12" height="12"
+                                                        viewBox="0 0 172 172"
+                                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M131.96744,14.33333c-1.83376,0 -3.66956,0.69853 -5.06706,2.09961l-12.23372,12.23372l28.66667,28.66667l12.23372,-12.23372c2.80217,-2.80217 2.80217,-7.33911 0,-10.13412l-18.53255,-18.53255c-1.40108,-1.40108 -3.23329,-2.09961 -5.06706,-2.09961zM103.91667,39.41667l-68.08333,68.08333c0,0 7.2025,0.03583 10.75,3.58333c3.5475,3.5475 3.47135,10.63802 3.47135,10.63802c0,0 7.30731,0.14065 10.86198,3.69531c3.55467,3.55467 3.58333,10.75 3.58333,10.75l68.08333,-68.08333zM26.30111,121.83333l-4.80111,28.66667l28.66667,-4.80111z"></path></g></g></svg>
+                                                </div>
+                                                <span>Conteúdo</span>
+                                            </div>
+                                            <ul>
+                                                <li class="sublevel1" id="si1">nova publicação</li>
+                                                <li class="sublevel1">inserir material na biblioteca</li>
+                                                <li class="sublevel1">criar enquete</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="level2" id="sh">
+                                                    <div class="level-before2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                        width="12" height="12"
+                                                        viewBox="0 0 172 172"
+                                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M131.96744,14.33333c-1.83376,0 -3.66956,0.69853 -5.06706,2.09961l-12.23372,12.23372l28.66667,28.66667l12.23372,-12.23372c2.80217,-2.80217 2.80217,-7.33911 0,-10.13412l-18.53255,-18.53255c-1.40108,-1.40108 -3.23329,-2.09961 -5.06706,-2.09961zM103.91667,39.41667l-68.08333,68.08333c0,0 7.2025,0.03583 10.75,3.58333c3.5475,3.5475 3.47135,10.63802 3.47135,10.63802c0,0 7.30731,0.14065 10.86198,3.69531c3.55467,3.55467 3.58333,10.75 3.58333,10.75l68.08333,-68.08333zM26.30111,121.83333l-4.80111,28.66667l28.66667,-4.80111z"></path></g></g></svg>
+                                                </div>
+                                                <span>Gerenciar</span>
+                                            </div>
+                                            <ul>
+                                                <li class="sublevel2" id="si2">editar perfil</li>
+                                                <li class="sublevel2">remover grupo</li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </div>
+                        </div>
+                             
+                                    
                     </li>
                 </ul>
             </div>      
@@ -115,5 +157,41 @@
             </section>
         </main>
         <!-- Container -->
+
+        <!-- Modais -->
+        <!-- postar material -->
+        <div class="modal" id="modal-postmaterial">
+            <div class="contencao-modal">
+                    <div class="close" id="button-postmaterial">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                        width="18" height="18"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M40.13333,22.93333c-1.46702,0 -2.93565,0.55882 -4.05365,1.67969l-11.46667,11.46667c-2.24173,2.24173 -2.24173,5.87129 0,8.10729l41.81302,41.81302l-41.81302,41.81302c-2.24173,2.24173 -2.24173,5.87129 0,8.10729l11.46667,11.46667c2.24173,2.24173 5.87129,2.24173 8.10729,0l41.81302,-41.81302l41.81302,41.81302c2.236,2.24173 5.87129,2.24173 8.10729,0l11.46667,-11.46667c2.24173,-2.24173 2.24173,-5.87129 0,-8.10729l-41.81302,-41.81302l41.81302,-41.81302c2.24173,-2.236 2.24173,-5.87129 0,-8.10729l-11.46667,-11.46667c-2.24173,-2.24173 -5.87129,-2.24173 -8.10729,0l-41.81302,41.81302l-41.81302,-41.81302c-1.12087,-1.12087 -2.58663,-1.67969 -4.05365,-1.67969z"></path></g></g></svg>
+                    </div>
+    
+                    <div class="createpost-modal">
+                        <h1 class="modal-title">escreva seu post</h1>
+                        <p class="modal-description">Anexe os materias que deseja e escreva um post bem maneiro para compartilhar com o pessoal. </p>
+                        <div class="createpost-modal-grid">
+                            <section class="c1c1">
+                                <img src="images/post.jpg" alt="" class="creategroup-icon">
+                                <div class="qtd-anexos">+3</div>
+                                <figcaption>Insira aqui seus anexos</figcaption>
+                            </section>
+                            <section class="c1c2">
+                                <label class="modal-label">Título da postagem</label>
+                                <input type="text" class="modal-input" value="Escreva aqui um nome bem maneiro.">
+                            </section>
+                            <section class="c2c2">
+                                <label class="modal-label">Descrição</label>
+                                <input type="text" class="modal-input" value="Escreva o que você está pensando ...">
+                            </section>
+                            <section class="c3c3">
+                                <input type="button" class="modal-button" value="Enviar">
+                            </section>
+                        </div>
+                    </div>
+            </div>          
+        </div>   
     </body>
 </html>

@@ -350,9 +350,10 @@ nav .menu{
     width: 100%; 
     background-color: white;
     display: flex;
+    border-bottom: 1px solid #e1e1e1;
 }
 
-.group-menu ul{
+.group-menu-ul{
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -360,7 +361,7 @@ nav .menu{
 }
 
 
-.group-menu ul li {
+.group-menu-li {
     font-weight: bold;
     color: #6d6d6d;
     cursor: pointer;
@@ -708,4 +709,208 @@ nav .menu{
 .img-select{
     width: 100px;
     height: 100px;
+}
+
+.dropdown-spc{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    /*z-index: 1;*/
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    width: 250px;
+    margin-top: 16px;
+    border-top: none;
+    margin-left: -200px;
+    font-family: 'Calibri', sans-serif;
+}
+
+.dropdown ul{
+    list-style-type: none;
+}
+
+.dropdown ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#li-dropdown:hover .dropdown {
+    display: block;
+}
+
+.level1, .level2 {
+    font-weight: bolder;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.level-before1{
+    background-color: rgb(91, 102, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.level-before1 svg{
+    /*margin-left: 6px;*/
+    margin-top: 6px;
+}
+
+.level1 span{
+    margin-left: 7px;
+}
+
+.level-before2{
+    background-color: rgb(59, 216, 106);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+} 
+
+.level-before2 svg{
+    /*margin-left: 6px;*/
+    margin-top: 6px;
+}
+
+.level2 span{
+    margin-left: 7px;
+}
+
+.sublevel1, .sublevel2 {
+    margin-left: 30px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.sublevel1::before{
+    content: "•";
+    font-size: 40px; 
+    color: rgb(91, 102, 255);
+    margin-left: 15px;
+}
+
+.sublevel2::before{
+    content: "•";
+    font-size: 40px; 
+    color: rgb(59, 216, 106);
+}
+
+#si1, #si2{
+    margin-left: 30px;
+    margin-top: -8px;
+}
+
+#sh{
+    margin-top: 8px;
+}
+
+.c1c1{grid-area: r1c1}
+.c1c2{grid-area: r1c2}
+
+.c2c2{grid-area: r2c2}
+.c2c3{grid-area: r2c3}
+
+.c3c3{grid-area: r3c3}
+
+.createpost-modal{
+    /* margin: 50px auto 0 auto; */
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    /*background-color: #ffff;*/
+    z-index: 2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: radial-gradient(circle at 590px 15px, rgba(255, 0, 0, 0) 0, rgba(0, 0, 0, 0) 35px, white 14px);
+    background-repeat: no-repeat;
+}
+
+.createpost-modal-grid{
+    margin-left: 150px;
+    padding-top: 30px;
+    display: grid;
+    grid-gap: 30px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 75px 75px 50px;
+    grid-template-areas: 
+    "r1c1 r1c2 r1c2"
+    "r1c1 r2c2 r2c2"
+    "r3c3 r3c3 r3c3"
+}  
+
+.createpost-icon{
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.createpost-modal > .modal-description{
+    width: 330px;
+}
+
+.c1c2 {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;	
+}
+
+.c2c2{
+    display: flex;
+    flex-direction: column;	
+}
+
+.modal-button{
+    margin-left: 175px;
+    padding: 3px 20px 3px 20px;
+    background-color:rgb(134, 156, 245);
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Calibri', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.c3c3{
+    margin-top: -25px;
+}
+
+.qtd-anexos{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(179, 242, 106);
+    color: #fff;
+    font-family: 'Calibri', sans-serif;
+    margin-top: -170px;
+    margin-left: 130px;
+}
+
+.createpost-modal-grid figcaption{
+    font-family: 'Calibri', sans-serif;
+    font-size: 12px;
+    color: gray;
+    /*margin-left: 40px;*/
+    max-width: 150px;
+    margin-top: 4px;
 }
